@@ -17,10 +17,12 @@ const App = () => {
           return (
             <section>
               <h1>{category.category}</h1>
-              {category.images.map((url) => {
-                // console.log(element);
-                return <img src={url} alt="Affiche de film" />;
-              })}
+              <div>
+                {category.images.map((url) => {
+                  // console.log(element);
+                  return <img src={url} alt="Affiche de film" />;
+                })}
+              </div>
             </section>
           );
         })}
