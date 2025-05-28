@@ -1,11 +1,14 @@
 body {
   background-color: rgb(0, 0, 0);
-  height: 100vh;
 }
 
 header {
-  background-color: rgb(197, 54, 54);
+  background-color: rgb(0, 0, 0);
   height: 100px;
+}
+
+header img {
+  width: 100px;
 }
 
 .wrapper {
@@ -18,3 +21,4 @@ h1 {
   font-weight: bold;
   font-size: 20px;
 }
+Ò

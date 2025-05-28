@@ -2,18 +2,29 @@ import "./App.css";
 import data from "./assets/data-movies.json";
 import Logo from "./assets/logo-netF.png";
 
+// console.log(data);
+
 const App = () => {
   return (
     <>
-      <body>
-        <header className="wrapper">
-          <img src={logo} alt="logo Netflix" />
-        </header>
+      <header className="wrapper">
+        <img src={Logo} alt="logo Netflix" />
+      </header>
 
-        <section className="wrapper">
-          <h1>test</h1>
-        </section>
-      </body>
+      <main className="wrapper">
+        {data.map((category) => {
+          // console.log(category.category);
+          return (
+            <section>
+              <h1>{category.category}</h1>
+              {category.images.map((url) => {
+                // console.log(element);
+                return <img src={url} alt="Affiche de film" />;
+              })}
+            </section>
+          );
+        })}
+      </main>
     </>
   );
 };
