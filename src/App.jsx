@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <header className="wrapper">
-        <img src={Logo} alt="logo Netflix" />
+        <img src={Logo} alt="logo Netflux" />
       </header>
 
       <main className="wrapper">
